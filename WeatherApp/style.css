@@ -1,0 +1,26 @@
+h1, h2 {
+    text-align: center;
+}
+body {
+    background-color: skyblue;
+}
+p {
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    color: brown;
+}
+.mensaje  {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: cadetblue;
+}
+#city {
+    border-radius: 15px;
+}
+#boton {
+    border-radius: 10px;
+    font-weight: bold;
+    color: ivory;
+    background-color: darkslategrey;
+}

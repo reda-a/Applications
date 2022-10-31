@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Weather in your city</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>What's the Weather ?</h1>
+        <form>
+            <div class="form-group">
+                <label for="city">Enter the name of your city.</label>
+                <input type="text" class="form-control" name="city" id="city" placeholder="Eg. London, Tokyo" value="">
+            </div>
+            <button type="submit" class="btn btn-default" id="boton">Submit</button>
+        </form>
+        <div id="weather">
+            <p class="mensaje">The weather will be displayed here.</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
