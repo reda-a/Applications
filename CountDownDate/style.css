@@ -1,15 +1,28 @@
 body {
     background-color: sandybrown;
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
-  p {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+h1 {
     text-align: center;
-    font-size: 60px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: black;
+    font-size: 2em;
+}
+
+  #countdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: firebrick;
+    font-size: 3em;
   }
-  #tema {
-    color: red;
-  }
-  #tema2 {
-    color: darkred;
-    font-size: 1.5em;
+  
+  #countdown p {
+    margin: 0;
+    padding: 1rem;
   }
