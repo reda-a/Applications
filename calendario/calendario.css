@@ -1,0 +1,122 @@
+
+/*instrucciones generales*/
+* {
+    margin: auto;
+}
+
+body {
+    background-color: #ec8fec;
+}
+
+/*cabecera de la página*/
+h1 {
+    text-align: center; 
+    padding: 0.5em;
+}
+
+/*div principal del calendario*/
+#calendario {
+    border: 18px double black ; 
+    max-width: 600px;
+    background-color:#fffafa; 
+    text-align: center;
+}
+
+    /*tabla del calendario*/
+#diasc {
+    border: 2px solid black; 
+    border-collapse: separate; 
+    border-spacing: 6px; 
+}
+
+#diasc th,#diasc td { 
+    font: normal 14pt arial; 
+    width: 70px; 
+    height: 30px; 
+}
+
+#diasc th { 
+    color: #990099; 
+    background-color: #5ecdec 
+}
+
+#diasc td { 
+    color: #492736; 
+    background-color: #9bf5ff 
+}
+
+/*línea de la fecha actual*/
+#fechaactual { 
+    font: bold 12pt arial; 
+    padding: 1em 
+}
+
+#fechaactual i { 
+    cursor: pointer ; 
+}
+
+#fechaactual i:hover { 
+    color: blue; 
+    text-decoration: none; 
+}
+
+/*formulario de busqueda de fechas*/
+#buscafecha { 
+    background-color: #790579; 
+    color: #9bf5ff; 
+    padding: 8px 
+}
+
+#buscafecha select, #buscafecha input  { 
+    background-color: #9bf5ff; 
+    color: #790579; 
+    font: bold 10pt arial;  
+}
+
+#buscafecha [type=text]  { 
+    text-align: center; 
+}
+
+#buscafecha  [type=button] { 
+    cursor: pointer; 
+    background-color:#ec8fec;
+}
+
+/*cabecera del calendario*/
+#anterior { 
+    float: left; width: 100px; 
+    font: bold 12pt arial;
+    padding: 0.5em 0.1em; 
+    cursor: pointer ; 
+    text-decoration: none;
+    margin: 1em 1em 1em 1em;
+    border: 2px rgb(141, 66, 66) solid;
+    background-color:#db4fdb;
+}
+
+#posterior { 
+    float: right; 
+    width: 100px; 
+    font: bold 12pt arial; 
+    padding: 0.5em 0.1em; 
+    cursor: pointer ;
+    text-decoration: none;
+    margin: 1em 1em 1em 1em;
+    border: 2px rgb(141, 66, 66) solid;
+    background-color:#db4fdb;
+}
+
+#anterior:hover {
+    text-decoration: none;
+    background-color:#b887b8;
+}
+
+#posterior:hover {
+    text-decoration: none;
+    background-color:#b887b8;
+}
+
+#titulos { 
+    font: normal 20pt "arial black"; 
+    padding: 1em; 
+}
