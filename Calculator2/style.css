@@ -1,0 +1,132 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+
+body {
+    background: linear-gradient(to top, rgb(112, 96, 6), rgb(145, 9, 122));
+    /* background:linear-gradient(to right,#fa4a3d,rgb(12, 46, 85)); */
+}
+
+#grid-calculator {
+    /* border:1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(4, 95px);
+    grid-template-rows: minmax(30px, auto) repeat(5, 80px);
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+#display {
+    border: 1px solid black;
+    grid-column: 1/-1;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 10px;
+    /* important for breaking the large numbers to next line */
+    word-wrap: break-word;
+    word-break: break-all;
+    box-shadow: 0px 0px 2px 1px;
+    border-radius: 10px;
+    margin: 2px;
+    box-shadow: 0 4px 4px;
+    border-top: 3px seashell solid;
+    border-bottom: 3px gray solid;
+}
+
+#display-prev {
+    /* border:1px solid black; */
+    min-height: 2rem;
+    color: rgba(109, 177, 32, 0.75);
+    font-size: 1.5rem;
+    font-family: monospace;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/l/font?kit=yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6xo3o4ZgUflJ1Q2O2X4tr_8Zk&skey=1145794a0c86a867&v=v25) format('woff2');
+  }
+
+#display-curr {
+    /* border:1px solid black; */
+    min-height: 2.5rem;
+    color: rgb(174, 236, 29);
+    font-size: 2rem;
+    font-family: 'Orbitron', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.span-two {
+    /* border:1px solid black; */
+    grid-column: span 2;
+}
+
+#grid-calculator>button {
+    cursor: pointer;
+    outline: none;
+    font-size: 2rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 2px;
+    box-shadow: 0 4px 4px;
+    border-bottom: 3px gray solid;
+    background: rgba(207, 197, 197, 0.75);
+    /* box-shadow: 0px 0px 2px 1px; */
+    transition: 0.3s;
+}
+
+[data-opr] {
+    background: rgba(255, 200, 200, 0.15) !important;
+}
+
+[data-clr] {
+    background: rgba(25, 255, 255, 0.15) !important;
+}
+
+[data-del] {
+    background: rgba(63, 36, 63, 0.15) !important;
+}
+
+[data-eql] {
+    background: rgba(20, 200, 20, 0.25) !important;
+}
+
+#grid-calculator>button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+[data-opr]:hover {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+[data-clr]:hover {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+[data-del]:hover {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+[data-eql]:hover {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+#info {
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+i {
+    font-size: 0.8rem;
+}
+
+b {
+    font-size: 0.8rem;
+    ;
+}
